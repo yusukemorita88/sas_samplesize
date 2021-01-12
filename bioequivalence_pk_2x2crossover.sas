@@ -12,3 +12,16 @@ proc power;
     ntotal=.
     power =0.8;
 run;
+
+/*another sample*/
+proc power;
+    pairedmeans test = equiv_ratio dist = lognormal 
+    meanratio = 0.95
+    alpha     = 0.05 
+    cv        = 0.5
+    corr      = 0
+    lower     = 0.8
+    upper     = 1.25
+    npairs    = .
+    power     =0.8;
+run;
