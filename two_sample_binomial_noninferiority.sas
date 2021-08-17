@@ -1,6 +1,7 @@
 proc power;
     twosamplefreq test=fm 
     groupproportions=(0.908 0.943) 
+    groupweights=(1 1)
     nullproportiondiff=-0.1 
     alpha=0.025 
     sides=U 
