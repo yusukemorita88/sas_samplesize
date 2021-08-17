@@ -5,7 +5,7 @@ proc power;
     groupweights=(1 1)
     nullproportiondiff=-0.1 
     alpha=0.025 
-    sides=U * U: p1 - p2 > nullPdiff, L: p1 - p2 < nullPdiff;  
+    sides=U  /* U: p1 - p2 > nullPdiff, L: p1 - p2 < nullPdiff */  
     power=0.8 
     ntotal=.;
 run;
